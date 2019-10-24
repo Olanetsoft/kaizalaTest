@@ -1,0 +1,31 @@
+{ 
+    "id": "com.kaizala.Feed", 
+    "schemaVersion": 1, 
+    "version": 1,
+    "minorVersion": 1,
+    "providerName": "TaviaTest", 
+    "displayName": "Feedback Test", 
+    "description": "Custom action to collect feedback.", 
+    "icon": "icons8-kite-shape-50.png", 
+    "appModel": "appModel.json", 
+    "views": { 
+     "CreationView": { 
+            "labelHeader": "Feedback requested", 
+            "sourceLocation": "CreationView.html" 
+            },
+     
+    "ChatCanvasCardView": { 
+                "labelResponded": "You have provided feedback.",
+                "labelRespondToForm": "PROVIDE FEEDBACK", 
+                "isResponseEditable": true 
+            },
+    "ResponseView": { 
+        "labelHeader": "Provide feedback",
+        "sourceLocation": "ResponseView.html"
+    }, 
+    "ResponseResultsView": { 
+        "labelPageHeader": "Feedback summary",
+        "sourceLocation": "SummaryView.html"
+    } 
+    }
+}
